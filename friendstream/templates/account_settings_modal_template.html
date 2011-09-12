@@ -1,0 +1,66 @@
+<div id="modal-from-dom" class="modal hide fade">
+<div class="modal-header">
+  <h3>Account Settings</h3>
+ <a href="#" class="close">&times;</a>
+</div>
+<div class="modal-body">
+<form class="form-stacked" action="">
+    <fieldset>
+
+      <div class="clearfix">
+        <label for="xlInput3">Username</label>
+        <div class="input">
+          <input type="text" size="30" name="xlInput3" id="xlInput3" class="xlarge">
+        </div>
+      </div><!-- /clearfix -->
+
+     <div class="clearfix">
+        <label for="xlInput3">Email</label>
+        <div class="input">
+          <input type="text" size="30" name="xlInput3" id="xlInput3" class="xlarge">
+        </div>
+      </div><!-- /clearfix -->
+
+
+    </fieldset>
+
+  </form>
+</div>
+<div class="modal-footer">
+ <a id="btnPrimary" href="#" class="btn primary">Save Changes</a>
+ <a id="btnSecondary" href="#" class="btn secondary">Cancel</a>
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="span16 columns">
+    <div class="span4 columns">
+  </div>
+</div>
+</div>
+
+
+<script>
+$(function () {
+  //Sets up the modal
+  var domModal = $("#modal-from-dom").modal({
+    backdrop: true, //Show a grey back drop
+    //closeOnEscape: true, //Can close on escape
+    modal: true //display it as a modal
+  });
+
+  $('#account_settings_navigation').click(function () {
+    domModal.toggle(); //Show the modal
+  });
+
+  $('#btnPrimary').live('click', function(){
+    alert('hell yes');
+    domModal.close(); //Close the modal
+  });
+
+  $('#btnSecondary').live('click', function(){
+    alert('hell no');
+    domModal.close(); //Close the modal
+  });
+})
+</script>

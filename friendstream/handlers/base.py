@@ -18,6 +18,3 @@ class BaseHandler(tornado.web.RequestHandler):
                 'cleanup_timeout': 10,
             })
         return self.application.db
-
-    def get_current_user(self):
-        raise NotImplementedError
