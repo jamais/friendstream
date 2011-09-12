@@ -9,6 +9,8 @@ class IndexHandler(BaseHandler):
         self.db.execute('SELECT pg_sleep(5); SELECT 636, 222, 123;',
             callback=self._on_response)
 
+        print 'helee'
+
     def _on_response(self, cursor):
         print 'Request', cursor.fetchall()
         cursor.close()
