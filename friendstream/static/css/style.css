@@ -1,0 +1,159 @@
+
+body {
+    padding-top: 40px;
+}
+#header_wrapper {
+    margin-bottom: 10px;
+}
+
+#sidebar {
+    min-height:300px;
+    margin:5px;
+    text-align: left;
+}
+
+.radius3 {
+    border-radius: 3px;
+} 
+
+.radius5 {
+    border-radius: 5px;
+    moz-border-radius: 5px;
+    webkit-border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.08);
+    border-style: solid;
+    border-width: 2px;
+} 
+
+#sidebar_menu li {
+    font-size:14px;
+    padding-bottom: 3px;
+    list-style-type: none;
+
+}
+
+#sidebar_menu ul {
+    margin-left:3px !important;
+}
+
+#navigation-avatar {
+    width: 20px;
+    height:20px;
+    display: inline;
+}
+
+.dropdown-toggle img {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.feed_entry {
+
+}
+
+.feed_entry_avatar {
+
+}
+
+.feed_entry_avatar img {
+    height:50px;
+    width: 50px;
+    border: 1px solid #ebebeb;
+}
+
+.big_text {
+    color: #707070;
+    font-size: 15px !important;
+}
+
+.feed_entry_content {
+    line-height:19px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.feed_entry_info {
+    margin-top: 5px;
+}
+
+
+.pagination {
+    margin-left: 80px;
+}
+
+#feed  a {
+    color: #829599;
+}
+
+.feed_entry_likes {
+    background: url("http://friendfeed.com/static/images/smile.png?v=4b9a") no-repeat scroll left top transparent;
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+.feed_entry_comments {
+    font-size: 13px !important;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+.feed_entry_comments li {
+    list-style-image:url('http://friendfeed.com/static/images/comment-unknown.png?v=8733');
+    margin-top:3px;
+}
+
+#latest_feed_title {
+    margin-left: 20px;
+}
+
+
+/*Fixes the positioning of the modal*/
+ .modal {
+    top: 0px;
+    margin-top: 60px;
+    z-index: 10002; /*Make the modal display over the toolbar*/
+ }
+  /*From the 1.3 work in progress build*/
+ .modal-backdrop {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10001; /*Make the modal display over the toolbar*/
+ }
+ .modal-backdrop.fade {
+    opacity: 0;
+ }
+ .modal-backdrop, .modal-backdrop.fade.in {
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+ }
+ .hide {
+    display: none;
+ }
+ .fade {
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    -ms-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+    opacity: 0;
+ }
+ .fade.in {
+    opacity: 1;
+ }
+ 

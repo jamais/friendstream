@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FriendStream</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="{{ static_url("css/bootstrap-1.2.0.css") }}" rel="stylesheet">
+        <link href="{{ static_url("css/style.css") }}" rel="stylesheet">
+        <script type="text/javascript" src="{{ static_url("javascript/jquery.js") }}"></script>
+        <script type="text/javascript" src="{{ static_url("javascript/twipsy.js") }}"></script>
+        <script type="text/javascript" src="{{ static_url("javascript/modal.js") }}"></script>
+        <script type="text/javascript" src="{{ static_url("javascript/scripts.js") }}"></script>
+    </head>
+
+<body>
+<div id="header_wrapper">
+    <div class="topbar">
+        <div class="fill">
+            <div class="container">
+                <h3><a href="#">FriendStream</a></h3>
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">Public Feed</a></li>
+                        <li><a href="#contact">Groups</a></li>
+                    </ul>
+                 <form action="">
+                    <input type="text" placeholder="Search">
+                </form>
+                <ul class="nav secondary-nav">
+                    <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">Emre Yılmaz</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" id="account_settings_navigation">Account Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                    </ul>
+                 </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+
+
+            {% block content %}
+            <div class="span13 columns">
+            <h3 id="latest_feed_title">Latest Feeds <small>from your friends</small></h3>
+            <div id="feed">
+                <div class="feed_entry">
+                    <div class="feed_entry_avatar span1 columns"><img src="http://m.friendfeed-media.com/p-37d973625aee11dd8697003048343a40-medium-1009"></div>
+                    <div class="feed_entry_content span11 columns radius5">
+                    <span class="big_text">
+                    canlı destek bölümünden aşağıdaki mesajı bırakan arkadaşa buradan sevgilerimi gönderiyorum :) - merhaba - aydin beyle gorusecektim - kendisinin cok yakisikli oldugunu duyduk - bana ulassin lutfen - tesekkurler
+                     </span><div class="feed_entry_info">
+                        16 minutes ago - from <a href="#">twitter</a> - <a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Share</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="feed_entry">
+                    <div class="feed_entry_avatar span1 columns"><img src="http://m.friendfeed-media.com/p-37d973625aee11dd8697003048343a40-medium-1009"></div>
+                    <div class="feed_entry_content span11 columns radius5"><span class="big_text">tarayıcım bozulmuş tr karakterleri göstermiyor(!) #quizyme</span>
+                         <div class="feed_entry_images">
+                         <img src="http://m.friendfeed-media.com/deed0ad7fb3c1f320bbe892d46a9b869e7ae624c">
+                         </div>
+                         <div class="feed_entry_info">
+                        22 minutes ago - from <a href="#">twitter</a> - <a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="feed_entry">
+                    <div class="feed_entry_avatar span1 columns"><img src="http://m.friendfeed-media.com/p-37d973625aee11dd8697003048343a40-medium-1009"></div>
+                    <div class="feed_entry_content span11 columns radius5"><span class="big_text">tarayıcım bozulmuş tr karakterleri göstermiyor(!) #quizyme</span>
+                         <div class="feed_entry_images">
+                         <img src="http://m.friendfeed-media.com/deed0ad7fb3c1f320bbe892d46a9b869e7ae624c">
+                         </div>
+                         <div class="feed_entry_info">
+                        22 minutes ago - from <a href="#">twitter</a> - <a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Share</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feed_entry">
+                    <div class="feed_entry_avatar span1 columns"><img src="http://m.friendfeed-media.com/p-eb64cc80d06e45928369dcb468b4401f-medium-1013"></div>
+                    <div class="feed_entry_content span11 columns radius5"><span class="big_text">pazartesi sabahlarına özgü bir bitkinlik, uykusuzluk ve ebesine atlanmışlık hali</span></a>
+                         <div class="feed_entry_info">
+                        22 minutes ago - via <a href="#">advanced tweets</a> - <a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Share</a>
+                        </div>
+                        <div class="feed_entry_likes">
+                         <a href="#">Bepanthol ve 1 kişi daha</a> and <a href="#">sinem</a> liked this.
+                        </div>
+                        <div class="feed_entry_comments">
+                        <ul>
+                            <li>nere gitti bu dayı ya - <a href="#">Silver</a></li>
+                            <li>gittiiii, gitti gitti gittti - <a href="#">Bahriye</a></a>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="pagination">
+                <ul>
+                <li class="prev disabled"><a href="#">&larr; Previous</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="next"><a href="#">Next &rarr;</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+        {% end %}
+        </div>
+        {% block sidebar %}
+        <div class="span3 columns radius3" id="sidebar">
+            <div id="sidebar_menu">
+                <h5>General</h5>
+                <ul>
+                    <li><a href="#">Home Feed</a></li>
+                    <li><a href="#">Direct Messages</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+
+                <h5>Follow Lists</h5>
+                <ul>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Fun</a></li>
+                </ul>
+            </div>
+        </div>
+        {% end %}
+
+
+    </div>
+
+    <div id="footer">
+        <p>&copy; FriendStream</p>
+    </div>
+</div>
+
+{% module Template("account_settings_modal_template.html") %}
+
+</body>
+</html>
+
